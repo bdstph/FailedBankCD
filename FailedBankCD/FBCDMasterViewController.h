@@ -1,5 +1,5 @@
 //
-//  FBCDMasterViewController.h
+//  FBCDMasterViewControllerTableViewController.h
 //  FailedBankCD
 //
 //  Created by Developers on 5/15/15.
@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#import <CoreData/CoreData.h>
+@interface FBCDMasterViewController : UITableViewController<NSFetchedResultsControllerDelegate, UISearchBarDelegate>
 
-@interface FBCDMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
-
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 
 @end

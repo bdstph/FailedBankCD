@@ -10,6 +10,9 @@
 
 #import "FBCDMasterViewController.h"
 
+#import "FailedBankInfo.h"
+#import "FailedBankDetails.h"
+
 @implementation FBCDAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -22,6 +25,24 @@
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     FBCDMasterViewController *controller = (FBCDMasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
+    
+    /*
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSError *error = nil;
+    
+    // Test listing all FailedBankInfos from the store
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"FailedBankInfo"
+                                              inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    for (FailedBankInfo *info in fetchedObjects) {
+        NSLog(@"Name: %@", info.name);
+        FailedBankDetails *details = info.details;
+        NSLog(@"Zip: %@", details.zip);
+    }
+     */
+    
     return YES;
 }
 							
@@ -106,6 +127,18 @@
     }
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"FailedBankCD.sqlite"];
+    
+    /*
+     // import existing record
+    if (![[NSFileManager defaultManager] fileExistsAtPath:[storeURL path]]) {
+        NSURL *preloadURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"CoreDataTutorial2" ofType:@"sqlite"]];
+        NSError* err = nil;
+        
+        if (![[NSFileManager defaultManager] copyItemAtURL:preloadURL toURL:storeURL error:&err]) {
+            NSLog(@"Oops, could copy preloaded data");
+        }
+    }
+     */
     
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];

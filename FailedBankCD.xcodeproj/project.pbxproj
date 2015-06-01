@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2906064C1B0B3C5D00A59528 /* FBCDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2906064B1B0B3C5D00A59528 /* FBCDDetailViewController.m */; };
+		29775C7C1B09DF6C00988477 /* CoreDataTutorial2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 29775C7B1B09DF6C00988477 /* CoreDataTutorial2.sqlite */; };
 		29D770771B05F820000CA804 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D770761B05F820000CA804 /* Foundation.framework */; };
 		29D770791B05F820000CA804 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D770781B05F820000CA804 /* CoreGraphics.framework */; };
 		29D7707B1B05F820000CA804 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D7707A1B05F820000CA804 /* UIKit.framework */; };
@@ -16,8 +18,6 @@
 		29D770891B05F820000CA804 /* FBCDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D770881B05F820000CA804 /* FBCDAppDelegate.m */; };
 		29D7708C1B05F820000CA804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D7708A1B05F820000CA804 /* Main.storyboard */; };
 		29D7708F1B05F820000CA804 /* FailedBankCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29D7708D1B05F820000CA804 /* FailedBankCD.xcdatamodeld */; };
-		29D770921B05F820000CA804 /* FBCDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D770911B05F820000CA804 /* FBCDMasterViewController.m */; };
-		29D770951B05F820000CA804 /* FBCDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D770941B05F820000CA804 /* FBCDDetailViewController.m */; };
 		29D770971B05F820000CA804 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D770961B05F820000CA804 /* Images.xcassets */; };
 		29D7709E1B05F820000CA804 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D7709D1B05F820000CA804 /* XCTest.framework */; };
 		29D7709F1B05F820000CA804 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D770761B05F820000CA804 /* Foundation.framework */; };
@@ -25,6 +25,11 @@
 		29D770A11B05F820000CA804 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D7707C1B05F820000CA804 /* CoreData.framework */; };
 		29D770A91B05F820000CA804 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29D770A71B05F820000CA804 /* InfoPlist.strings */; };
 		29D770AB1B05F820000CA804 /* FailedBankCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D770AA1B05F820000CA804 /* FailedBankCDTests.m */; };
+		29D770B61B05F8C4000CA804 /* FBCDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D770B51B05F8C4000CA804 /* FBCDMasterViewController.m */; };
+		29DF58EA1B1C4C3C00B65FBB /* FBCDTagListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF58E91B1C4C3C00B65FBB /* FBCDTagListTableViewController.m */; };
+		29DF58ED1B1C645000B65FBB /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF58EC1B1C645000B65FBB /* Tag.m */; };
+		29DF58F01B1C645000B65FBB /* FailedBankDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF58EF1B1C645000B65FBB /* FailedBankDetails.m */; };
+		29DF58F31B1C645000B65FBB /* FailedBankInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DF58F21B1C645000B65FBB /* FailedBankInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2906064A1B0B3C5D00A59528 /* FBCDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBCDDetailViewController.h; sourceTree = "<group>"; };
+		2906064B1B0B3C5D00A59528 /* FBCDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBCDDetailViewController.m; sourceTree = "<group>"; };
+		29775C7B1B09DF6C00988477 /* CoreDataTutorial2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = CoreDataTutorial2.sqlite; path = "../../../../../Library/Developer/Xcode/DerivedData/CoreDataTutorial2-djifjzzwnxppoedvgamagiedeeim/Build/Products/Debug/CoreDataTutorial2.sqlite"; sourceTree = "<group>"; };
 		29D770731B05F820000CA804 /* FailedBankCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FailedBankCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D770761B05F820000CA804 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		29D770781B05F820000CA804 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,16 +59,22 @@
 		29D770881B05F820000CA804 /* FBCDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBCDAppDelegate.m; sourceTree = "<group>"; };
 		29D7708B1B05F820000CA804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29D7708E1B05F820000CA804 /* FailedBankCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FailedBankCD.xcdatamodel; sourceTree = "<group>"; };
-		29D770901B05F820000CA804 /* FBCDMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBCDMasterViewController.h; sourceTree = "<group>"; };
-		29D770911B05F820000CA804 /* FBCDMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBCDMasterViewController.m; sourceTree = "<group>"; };
-		29D770931B05F820000CA804 /* FBCDDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBCDDetailViewController.h; sourceTree = "<group>"; };
-		29D770941B05F820000CA804 /* FBCDDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBCDDetailViewController.m; sourceTree = "<group>"; };
 		29D770961B05F820000CA804 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		29D7709C1B05F820000CA804 /* FailedBankCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FailedBankCDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D7709D1B05F820000CA804 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		29D770A61B05F820000CA804 /* FailedBankCDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FailedBankCDTests-Info.plist"; sourceTree = "<group>"; };
 		29D770A81B05F820000CA804 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		29D770AA1B05F820000CA804 /* FailedBankCDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FailedBankCDTests.m; sourceTree = "<group>"; };
+		29D770B41B05F8C4000CA804 /* FBCDMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBCDMasterViewController.h; sourceTree = "<group>"; };
+		29D770B51B05F8C4000CA804 /* FBCDMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBCDMasterViewController.m; sourceTree = "<group>"; };
+		29DF58E81B1C4C3C00B65FBB /* FBCDTagListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBCDTagListTableViewController.h; sourceTree = "<group>"; };
+		29DF58E91B1C4C3C00B65FBB /* FBCDTagListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBCDTagListTableViewController.m; sourceTree = "<group>"; };
+		29DF58EB1B1C645000B65FBB /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		29DF58EC1B1C645000B65FBB /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		29DF58EE1B1C645000B65FBB /* FailedBankDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankDetails.h; sourceTree = "<group>"; };
+		29DF58EF1B1C645000B65FBB /* FailedBankDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankDetails.m; sourceTree = "<group>"; };
+		29DF58F11B1C645000B65FBB /* FailedBankInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankInfo.h; sourceTree = "<group>"; };
+		29DF58F21B1C645000B65FBB /* FailedBankInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +103,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2906064D1B0B474E00A59528 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				29D7708D1B05F820000CA804 /* FailedBankCD.xcdatamodeld */,
+				29DF58F11B1C645000B65FBB /* FailedBankInfo.h */,
+				29DF58F21B1C645000B65FBB /* FailedBankInfo.m */,
+				29DF58EE1B1C645000B65FBB /* FailedBankDetails.h */,
+				29DF58EF1B1C645000B65FBB /* FailedBankDetails.m */,
+				29DF58EB1B1C645000B65FBB /* Tag.h */,
+				29DF58EC1B1C645000B65FBB /* Tag.m */,
+				29775C7B1B09DF6C00988477 /* CoreDataTutorial2.sqlite */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		29D7706A1B05F820000CA804 = {
 			isa = PBXGroup;
 			children = (
@@ -126,12 +155,14 @@
 				29D770871B05F820000CA804 /* FBCDAppDelegate.h */,
 				29D770881B05F820000CA804 /* FBCDAppDelegate.m */,
 				29D7708A1B05F820000CA804 /* Main.storyboard */,
-				29D770901B05F820000CA804 /* FBCDMasterViewController.h */,
-				29D770911B05F820000CA804 /* FBCDMasterViewController.m */,
-				29D770931B05F820000CA804 /* FBCDDetailViewController.h */,
-				29D770941B05F820000CA804 /* FBCDDetailViewController.m */,
 				29D770961B05F820000CA804 /* Images.xcassets */,
-				29D7708D1B05F820000CA804 /* FailedBankCD.xcdatamodeld */,
+				2906064D1B0B474E00A59528 /* CoreData */,
+				29D770B41B05F8C4000CA804 /* FBCDMasterViewController.h */,
+				29D770B51B05F8C4000CA804 /* FBCDMasterViewController.m */,
+				2906064A1B0B3C5D00A59528 /* FBCDDetailViewController.h */,
+				2906064B1B0B3C5D00A59528 /* FBCDDetailViewController.m */,
+				29DF58E81B1C4C3C00B65FBB /* FBCDTagListTableViewController.h */,
+				29DF58E91B1C4C3C00B65FBB /* FBCDTagListTableViewController.m */,
 				29D7707F1B05F820000CA804 /* Supporting Files */,
 			);
 			path = FailedBankCD;
@@ -244,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29D770971B05F820000CA804 /* Images.xcassets in Resources */,
+				29775C7C1B09DF6C00988477 /* CoreDataTutorial2.sqlite in Resources */,
 				29D770831B05F820000CA804 /* InfoPlist.strings in Resources */,
 				29D7708C1B05F820000CA804 /* Main.storyboard in Resources */,
 			);
@@ -264,11 +296,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29DF58ED1B1C645000B65FBB /* Tag.m in Sources */,
+				29DF58F31B1C645000B65FBB /* FailedBankInfo.m in Sources */,
+				29DF58EA1B1C4C3C00B65FBB /* FBCDTagListTableViewController.m in Sources */,
 				29D7708F1B05F820000CA804 /* FailedBankCD.xcdatamodeld in Sources */,
-				29D770951B05F820000CA804 /* FBCDDetailViewController.m in Sources */,
+				29DF58F01B1C645000B65FBB /* FailedBankDetails.m in Sources */,
+				29D770B61B05F8C4000CA804 /* FBCDMasterViewController.m in Sources */,
 				29D770851B05F820000CA804 /* main.m in Sources */,
+				2906064C1B0B3C5D00A59528 /* FBCDDetailViewController.m in Sources */,
 				29D770891B05F820000CA804 /* FBCDAppDelegate.m in Sources */,
-				29D770921B05F820000CA804 /* FBCDMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +509,7 @@
 				29D770B01B05F820000CA804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29D770B11B05F820000CA804 /* Build configuration list for PBXNativeTarget "FailedBankCDTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +518,7 @@
 				29D770B31B05F820000CA804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
