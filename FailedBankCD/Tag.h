@@ -2,7 +2,7 @@
 //  Tag.h
 //  FailedBankCD
 //
-//  Created by Developers on 6/1/15.
+//  Created by Developers on 6/2/15.
 //  Copyright (c) 2015 BrylleSeraspeCollectionsCoreDataTutorial. All rights reserved.
 //
 
@@ -14,14 +14,14 @@
 @interface Tag : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSSet *bankdetails;
+@property (nonatomic, retain) NSSet *detail;
 @end
 
 @interface Tag (CoreDataGeneratedAccessors)
 
-- (void)addBankdetailsObject:(FailedBankDetails *)value;
-- (void)removeBankdetailsObject:(FailedBankDetails *)value;
-- (void)addBankdetails:(NSSet *)values;
-- (void)removeBankdetails:(NSSet *)values;
+- (void)addDetailObject:(FailedBankDetails *)value;
+- (void)removeDetailObject:(FailedBankDetails *)value;
+- (void)addDetail:(NSSet *)values;
+- (void)removeDetail:(NSSet *)values;
 
 @end

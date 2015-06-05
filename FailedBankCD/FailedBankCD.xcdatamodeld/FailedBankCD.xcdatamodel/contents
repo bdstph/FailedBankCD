@@ -8,7 +8,7 @@
         <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="zip" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="info" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="FailedBankInfo" inverseName="details" inverseEntity="FailedBankInfo" syncable="YES"/>
-        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="bankdetails" inverseEntity="Tag" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="detail" inverseEntity="Tag" syncable="YES"/>
     </entity>
     <entity name="FailedBankInfo" representedClassName="FailedBankInfo" syncable="YES">
         <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
@@ -18,11 +18,11 @@
     </entity>
     <entity name="Tag" representedClassName="Tag" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="bankdetails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FailedBankDetails" inverseName="tags" inverseEntity="FailedBankDetails" syncable="YES"/>
+        <relationship name="detail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FailedBankDetails" inverseName="tags" inverseEntity="FailedBankDetails" syncable="YES"/>
     </entity>
     <elements>
-        <element name="FailedBankDetails" positionX="90" positionY="-27" width="128" height="163"/>
-        <element name="FailedBankInfo" positionX="-81" positionY="-0" width="128" height="103"/>
-        <element name="Tag" positionX="90" positionY="188" width="128" height="73"/>
+        <element name="FailedBankDetails" positionX="-567" positionY="90" width="128" height="163"/>
+        <element name="FailedBankInfo" positionX="-576" positionY="-81" width="128" height="103"/>
+        <element name="Tag" positionX="-380" positionY="135" width="128" height="73"/>
     </elements>
 </model>

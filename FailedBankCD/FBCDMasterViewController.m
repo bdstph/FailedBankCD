@@ -11,6 +11,7 @@
 #import "FailedBankInfo.h"
 #import "FailedBankDetails.h"
 #import "FBCDDetailViewController.h"
+#import "FBCDSearchViewController.h"
 
 @interface FBCDMasterViewController ()
 
@@ -46,10 +47,6 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                                           target:self
                                                                                           action:@selector(addBank)];
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
-                                                                                           target:self
-                                                                                           action:@selector(showSearch)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,8 +70,9 @@
         destination.bankInfo = [_fetchedResultsController objectAtIndexPath:indexPath];
         
     }
-    else if ([segue.identifier isEqualToString:@"BankDetailAdd"]) {
-        //FBCDDetailViewController *destination = [segue destinationViewController];
+    else if ([segue.identifier isEqualToString:@"BankSearch"]) {
+        FBCDSearchViewController *searchViewController = [segue destinationViewController];
+        searchViewController.managedObjectContext = managedObjectContext;
         
     }
 }
@@ -133,7 +131,6 @@
     }
     
 }
-
 
 #pragma mark - Table view data source
 
